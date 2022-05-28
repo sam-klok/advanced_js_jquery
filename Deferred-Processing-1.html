@@ -81,7 +81,7 @@
       $('#Load').click(function(event) {
         $.when(
           showMessage({message: 'Starting processing'}),
-          loadSection({url: "Content-1a.html", selector: '#Section1', dynamic: true}),
+          loadSection({url: "http://127.0.0.1:8080/Content-1a.html", selector: '#Section1', dynamic: true}),
           loadSection({url: "Content-2.html", selector: '#Section2'}),
           loadSection({url: "Content-3a.html", selector: '#Section3', dynamic: true}),
           loadSection(),
